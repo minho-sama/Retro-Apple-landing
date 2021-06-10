@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+article {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: minmax(700px, 3fr) 3fr 1fr;
+      grid-template-rows: minmax(700px, 3fr) 3fr 1fr;
+  gap: 0;
+}
+
+article #main {
+  background: url(../media/hike.jpeg) no-repeat;
+  background-position: 50% 100%;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+article #main nav {
+  width: 70%;
+  margin: 80px auto;
+  border: 1px solid #636363;
+  background-color: #898989;
+  border-radius: 5px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+article #main nav img {
+  width: 14%;
+}
+
+article #main nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+article #main nav ul li {
+  border-left: 1px solid #636363;
+  border-right: 1px solid #636363;
+  list-style: none;
+  width: 11.3%;
+  text-align: center;
+  padding: 12px;
+  text-shadow: -1px -1px 1px black;
+  background: #898989;
+  background: -webkit-gradient(linear, left top, left bottom, from(#898989), color-stop(50%, #6d6d6d), color-stop(50%, #5e5e5e), color-stop(80%), to(#787878));
+  background: linear-gradient(#898989, #6d6d6d 50%, #5e5e5e 50%, 80%, #787878);
+}
+
+article #main nav ul li:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#414040), color-stop(50%, #4b4b4b), color-stop(50%, #414141), color-stop(80%), to(#787878));
+  background: linear-gradient(#414040, #4b4b4b 50%, #414141 50%, 80%, #787878);
+}
+
+article #main nav ul li:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  padding: 8px;
+}
+
+article #main div {
+  width: 65%;
+  margin: 10% auto;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  padding: 8px 3px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+article #main div h1 {
+  font-size: 6.5vh;
+  font-weight: 400;
+  margin-bottom: 3%;
+}
+
+article #main div p {
+  margin: 10px auto 40px;
+  font-size: 27px;
+  letter-spacing: 0.1em;
+}
+
+article #main div a {
+  text-decoration: none;
+  margin-top: 20%;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+article #main div a:hover {
+  text-decoration: underline;
+}
+
+article #slide {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  display: -ms-grid;
+  display: grid;
+  height: 195px;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+article #slide div:nth-child(1) {
+  background: url(../media/iphone.jpeg);
+  background-size: 100%;
+  -ms-grid-column: 1;
+  grid-column: 1;
+}
+
+article #slide div:nth-child(2) {
+  background: url(../media/iphone2.jpeg);
+  background-size: 100%;
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+article #slide div:nth-child(3) {
+  background: url(../media/mac.jpeg);
+  background-size: 100%;
+  -ms-grid-column: 3;
+  grid-column: 3;
+}
+
+article #slide div:nth-child(4) {
+  background: url(../media/resp.jpeg);
+  background-size: 100%;
+  -ms-grid-column: 4;
+  grid-column: 4;
+}
+
+article footer {
+  color: black;
+  height: 100px;
+  width: 90vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 11px;
+  gap: 5%;
+}
+
+article footer span {
+  color: #1177eb;
+  cursor: pointer;
+}
+
+article footer span:hover {
+  text-decoration: underline;
+}
+
+article footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding-left: 10px;
+}
+
+article footer ul li {
+  margin: 5px;
+  border-right: 1px solid #474747;
+}
+
+article footer ul li a {
+  color: #1177eb;
+  margin-right: 5px;
+}
+/*# sourceMappingURL=styles.css.map */

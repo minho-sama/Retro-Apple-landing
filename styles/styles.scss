@@ -1,0 +1,146 @@
+ *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ article{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+     width: 100%;
+     height: 100%;
+     display:grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-template-rows: minmax(700px, 3fr) 3fr 1fr;
+     gap: 0;
+     #main{
+        background: url(../media/hike.jpeg) no-repeat;
+        background-position: 50% 100%;
+        grid-column: 1/4;
+        grid-row: 1;
+        nav{
+            width: 70%;
+            margin: 80px auto;
+            border: 1px solid rgb(99, 99, 99);
+            background-color: rgb(137, 137, 137);
+            border-radius: 5px;
+            font-size: 13px;
+            cursor: pointer;
+            img{
+                width: 14%;
+            }
+            ul{
+                display: flex;
+                align-items: center;
+                li{
+                    border-left: 1px solid rgb(99, 99, 99);
+                    border-right: 1px solid rgb(99, 99, 99);
+                    list-style: none;
+                    width: 11.3%;
+                    text-align: center;
+                    padding: 12px;
+                    text-shadow: -1px -1px 1px rgb(0, 0, 0);
+                    background: rgb(137, 137, 137);
+                    background: linear-gradient( rgb(137, 137, 137), rgb(109, 109, 109) 50%, rgb(94, 94, 94) 50%, 80%, rgb(120, 120, 120) );
+                    &:hover{
+                        background: linear-gradient( rgb(65, 64, 64), rgb(75, 75, 75) 50%, rgb(65, 65, 65) 50%, 80%, rgb(120, 120, 120) );
+                    }
+                    
+                }
+                li:last-child{
+                    display: flex;
+                    justify-items: center;
+                    padding: 8px;
+                }
+            }
+        }
+        div{
+            width: 65%;
+            margin: 10% auto;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.1);
+            border-radius: 3px;
+            padding: 8px 3px;
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-family: 'Roboto', sans-serif;
+            h1{
+                font-size: 6.5vh;
+                font-weight: 400;
+                margin-bottom: 3%;
+            }
+            p{
+                margin: 10px auto 40px;
+                font-size: 27px;
+                letter-spacing: 0.1em;
+            }
+            a{
+                text-decoration: none;
+                margin-top: 20%;
+                font-size: 20px;
+                cursor: pointer;
+                color:white;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+     }
+     #slide{
+        grid-column: 1/4;
+        grid-row: 2;
+        display:grid;
+        height: 195px;
+        grid-template-columns: repeat(4, 1fr);
+        div:nth-child(1){
+            background: url(../media/iphone.jpeg);
+            background-size: 100%;
+            grid-column: 1;
+        }
+        div:nth-child(2){
+            background: url(../media/iphone2.jpeg);
+            background-size: 100%;
+            grid-column: 2;
+        }
+        div:nth-child(3){
+            background: url(../media/mac.jpeg);
+            background-size: 100%;
+            grid-column: 3;
+        }
+        div:nth-child(4){
+            background: url(../media/resp.jpeg);            background-size: 100%;
+            grid-column: 4;
+        }
+     }
+     footer{
+        color:black;
+        height: 100px;
+        width: 90vw;
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-size: 11px;
+        gap: 5%;
+        span{
+            color: rgb(17, 119, 235);
+            cursor: pointer;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        ul{
+            display:flex;
+            list-style: none;
+            padding-left: 10px;
+            li{
+                margin: 5px;
+                border-right: 1px solid rgb(71, 71, 71);
+                a{
+                    color: rgb(17, 119, 235);
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+
+ }
